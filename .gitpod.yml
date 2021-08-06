@@ -1,5 +1,10 @@
-image: gitpod/workspace-full
-vscode:
-  extensions:
-    - abusaidm.html-snippets@0.2.1:7b7Vkkp6Lem9WOqKCYMq2w==
-    - Zignd.html-css-class-completion@1.19.0:b3YWQQIEP1z3u93nyLX0UA==
+# List the start up tasks. Learn more https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - init: echo 'init script' # runs during prebuild
+    command: echo 'start script'
+
+# List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 3000
+    onOpen: open-preview
+    
